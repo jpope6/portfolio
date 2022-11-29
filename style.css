@@ -11,20 +11,20 @@ body {
 }
 
 .dashboard {
-  background-color: #868B8E;
+  background-color: #868b8e;
   grid-area: 1 / 1 / 8 / 1;
   display: grid;
   grid-template: repeat(16, 1fr) / repeat(6, 1fr);
 }
 
 .header {
-  background-color: #E7D2CC;
+  background-color: #e7d2cc;
   grid-area: 1 / 2 / 2 / 7;
   box-shadow: 0 4px 4px -2px black;
 }
 
 .middle {
-  background-color: #EEEDE7;
+  background-color: #eeede7;
   grid-area: 2 / 2 / 8 / 7;
   display: grid;
   grid-template: repeat(6, 1fr) / repeat(5, 1fr);
@@ -45,10 +45,43 @@ body {
 
 .projects > div {
   margin: 8%;
-  background-color: #B9B7BD;
+  background-color: #b9b7bd;
   border-radius: 10px;
   filter: drop-shadow(4px 4px 4px black);
   padding: 5%;
+}
+
+.projects > div::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.projects > div:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.projects > div::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background-color: #7e8772;
+  z-index: -1;
+  border-radius: 10px;
+  transition: transform .3s ease;
+}
+
+.projects > div:hover::after{
+  content: " ";
+  border-radius: 10px;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
 }
 
 .right {
