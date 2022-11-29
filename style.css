@@ -13,6 +13,8 @@ body {
 .dashboard {
   background-color: #1da1f2;
   grid-area: 1 / 1 / 8 / 1;
+  display: grid;
+  grid-template: repeat(16, 1fr) / repeat(6, 1fr);
 }
 
 .header {
@@ -24,4 +26,17 @@ body {
 .middle {
   background-color: whitesmoke;
   grid-area: 2 / 2 / 8 / 7;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(5, 1fr);
 }
+
+.projects {
+    grid-area: 1 / 1 / 7 / 5;
+    background-color: bisque;
+}
+
+.right {
+    grid-area: 1 / 5 / 7 / 6;
+    background-color: blueviolet;
+}
+
