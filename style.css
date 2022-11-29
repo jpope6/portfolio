@@ -11,20 +11,20 @@ body {
 }
 
 .dashboard {
-  background-color: #1da1f2;
+  background-color: #868B8E;
   grid-area: 1 / 1 / 8 / 1;
   display: grid;
   grid-template: repeat(16, 1fr) / repeat(6, 1fr);
 }
 
 .header {
-  background-color: white;
+  background-color: #E7D2CC;
   grid-area: 1 / 2 / 2 / 7;
-  filter: drop-shadow(0px 4px 4px gray);
+  box-shadow: 0 4px 4px -2px black;
 }
 
 .middle {
-  background-color: whitesmoke;
+  background-color: #EEEDE7;
   grid-area: 2 / 2 / 8 / 7;
   display: grid;
   grid-template: repeat(6, 1fr) / repeat(5, 1fr);
@@ -39,39 +39,57 @@ body {
 .projects {
   padding-top: 2%;
   grid-area: 1 / 1 / 7 / 5;
-  background-color: bisque;
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 }
 
 .projects > div {
   margin: 8%;
-  background-color: green;
+  background-color: #B9B7BD;
   border-radius: 10px;
-  filter: drop-shadow(0px 4px 4px gray);
+  filter: drop-shadow(4px 4px 4px black);
   padding: 5%;
 }
 
 .right {
   grid-area: 1 / 5 / 7 / 6;
-  background-color: blueviolet;
   display: grid;
-  grid-template: repeat(16, 1fr) / repeat(1, 1fr);
+  grid-template: repeat(20, 1fr) / repeat(1, 1fr);
 }
 
 .announcements-header {
   position: relative;
   margin: 0;
   margin-top: 7%;
-  padding-left: 7%;
+  padding-left: 15%;
   grid-area: 1 / 1 / 1 / 1;
 }
 
 .announcements {
-  background-color: aqua;
-  grid-area: 2 / 1 / 9 / 1;
-  margin: 5%;
+  background-color: #d0bcab;
+  grid-area: 2 / 1 / 10 / 1;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2%;
   padding: 5%;
   border-radius: 10px;
-  filter: drop-shadow(0px 4px 4px gray);
+  filter: drop-shadow(4px 4px 4px gray);
+}
+
+.trending-header {
+  margin: 0;
+  margin-top: 2%;
+  padding-left: 15%;
+  grid-area: 11 / 1 / 11 / 1;
+}
+
+.trending {
+  background-color: #d0bcab;
+  grid-area: 12 / 1 / 20 / 1;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2%;
+  padding: 5%;
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px 4px gray);
 }
