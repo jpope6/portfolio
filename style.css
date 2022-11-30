@@ -266,4 +266,20 @@ div .circle {
   padding: 5%;
   border-radius: 10px;
   filter: drop-shadow(4px 4px 4px gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact > div {
+  display: flex;
+}
+
+.contact > div > img {
+  object-fit: contain;
+  padding-right: 5%;
+}
+
+.contact > div > a {
+  color: blue;
 }
