@@ -220,6 +220,11 @@ div .circle {
   }
 }
 
+.projects > div > button {
+  border-radius: 10px;
+  background-color: #b9b7bd;
+}
+
 .right {
   grid-area: 1 / 5 / 7 / 6;
   display: grid;
